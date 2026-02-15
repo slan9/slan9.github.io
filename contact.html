@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+
   <meta charset="UTF-8">
   <title>Contact — Sem Lala</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+<style>.contact-header {
+  font-family: 'Rubik Glitch', cursive;
+  font-size: 52px;
+  letter-spacing: 4px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  position: relative;
+}
 
+/* subtle digital offset effect */
+.contact-header::before,
+.contact-header::after {
+  content: "CONTACT";
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.6;
+}
+
+.contact-header::before {
+  color: red;
+  transform: translate(2px, -2px);
+}
+
+.contact-header::after {
+  color: cyan;
+  transform: translate(-2px, 2px);
+}
+</style>
 <body>
 
   <nav>
@@ -15,7 +45,7 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <h1>Contact</h1>
+<h1 class="contact-header">CONTACT</h1>
 
   <p>
     Inquiries:
